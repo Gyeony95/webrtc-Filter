@@ -2,7 +2,7 @@ const express = require('express')
 var app = express();
 var http = require('http').Server(app);
 var fs = require('fs')
-//소켓세팅
+app.use("/static", express.static('./static/'));
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(req, res){

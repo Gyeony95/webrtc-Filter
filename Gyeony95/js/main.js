@@ -15,7 +15,7 @@ let photoFilter;
 let firstButton;
 let secondButton;
 let thirdButton;
-
+app.use("/static", express.static('./static/'));
 
 const configuration = {
 	iceServers: [{
